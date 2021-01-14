@@ -1,0 +1,149 @@
+Script started on Wed 13 Jan 2021 10:30:57 AM CST
+[?1034hbash-4.2$ ls
+commands.script
+bash-4.2$ man ls
+[?1049h[?1h=LS(1)                            User Commands                           LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about  the FILEs (the current directory by default).[m
+       Sort entries alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m  is  speci‐[m
+       fied.[m
+[m
+       Mandatory  arguments  to  long  options are mandatory for short options[m
+       too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049lbash-4.2$ cd ..
+bash-4.2$ cd P[Kproject1/
+bash-4.2$ pwd
+/home/u1/ead0044/Documents/comp3500/project1
+bash-4.2$ ls
+commands.script
+bash-4.2$ mkdir test
+bash-4.2$ ls
+commands.script  test
+bash-4.2$ cp commands.script test
+bash-4.2$ ls
+commands.script  test
+bash-4.2$ cd  [Ktest
+bash-4.2$ ls
+commands.script
+bash-4.2$ mv commands.script commands.script 
+mv: ‘commands.script’ and ‘commands.script’ are the same file
+bash-4.2$ mv cmo[K[Kommands.script test[K[K[K[Ktest
+bash-4.2$ ls
+test
+bash-4.2$ rm tests
+rm: cannot remove ‘tests’: No such file or directory
+bash-4.2$ rm test
+bash-4.2$ ls
+bash-4.2$ cd ..
+bash-4.2$ ls
+commands.script  test
+bash-4.2$ rmdir test
+bash-4.2$ ls
+commands.script
+bash-4.2$ chmod commands.script commands.script [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+chmod: missing operand after ‘commands.script’
+Try 'chmod --help' for more information.
+bash-4.2$ chomd --help
+bash: chomd: command not found
+bash-4.2$ chmod --help
+Usage: chmod [OPTION]... MODE[,MODE]... FILE...
+  or:  chmod [OPTION]... OCTAL-MODE FILE...
+  or:  chmod [OPTION]... --reference=RFILE FILE...
+Change the mode of each FILE to MODE.
+With --reference, change the mode of each FILE to that of RFILE.
+
+  -c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's mode instead of MODE values
+  -R, --recursive        change files and directories recursively
+      --help     display this help and exit
+      --version  output version information and exit
+
+Each MODE is of the form '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'.
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+For complete documentation, run: info coreutils 'chmod invocation'
+bash-4.2$ chmod mode commands.script 
+chmod: invalid mode: ‘mode’
+Try 'chmod --help' for more information.
+bash-4.2$ chmod + mode commands.script 
+chmod: cannot access ‘mode’: No such file or directory
+bash-4.2$ h[Kchomd [K[K[K[Kmod + commands.script 
+bash-4.2$ ls
+commands.script
+bash-4.2$ clear
+[3;J[H[2Jbash-4.2$ top
+[?1h=[?25l[H[2J(B[mtop - 10:34:29 up 141 days, 48 min,  2 users,  load average: 0.00, 0.01, 0.05(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 277 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 276 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  1.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 98.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 24508112 (B[m[39;49mtotal,(B[m[39;49m[1m  5461728 (B[m[39;49mfree,(B[m[39;49m[1m   587276 (B[m[39;49mused,(B[m[39;49m[1m 18459108 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 12386300 (B[m[39;49mtotal,(B[m[39;49m[1m 12386300 (B[m[39;49mfree,(B[m[39;49m[1m        0 (B[m[39;49mused.(B[m[39;49m[1m 23195768 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     (B[m[39;49m[K
+(B[m[1m 8349 ead0044   20   0  168568   2468   1632 R   5.6  0.0   0:00.03 top         (B[m[39;49m[K
+(B[m    1 root      20   0  194212   7244   4088 S   0.0  0.0  25:19.69 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.96 kthreadd    (B[m[39;49m[K
+(B[m    4 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ (B[m[39;49m[K
+(B[m    6 root      20   0       0      0      0 S   0.0  0.0   0:03.54 ksoftirqd/0 (B[m[39;49m[K
+(B[m    7 root      rt   0       0      0      0 S   0.0  0.0   0:00.85 migration/0 (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0  26:57.61 rcu_sched   (B[m[39;49m[K
+(B[m   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+ (B[m[39;49m[K
+(B[m   11 root      rt   0       0      0      0 S   0.0  0.0   2:09.00 watchdog/0  (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:30.23 watchdog/1  (B[m[39;49m[K
+(B[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:00.88 migration/1 (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S   0.0  0.0   0:01.49 ksoftirqd/1 (B[m[39;49m[K
+(B[m   16 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+ (B[m[39;49m[K
+(B[m   18 root      rt   0       0      0      0 S   0.0  0.0   0:28.92 watchdog/2  (B[m[39;49m[K
+(B[m   19 root      rt   0       0      0      0 S   0.0  0.0   0:00.22 migration/2 (B[m[39;49m[K
+(B[m   20 root      20   0       0      0      0 S   0.0  0.0   0:01.36 ksoftirqd/2 (B[m[39;49m[K[H(B[mtop - 10:34:32 up 141 days, 48 min,  2 users,  load average: 0.00, 0.01, 0.05(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 278 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 277 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 24508112 (B[m[39;49mtotal,(B[m[39;49m[1m  5461756 (B[m[39;49mfree,(B[m[39;49m[1m   587248 (B[m[39;49mused,(B[m[39;49m[1m 18459108 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 12386300 (B[m[39;49mtotal,(B[m[39;49m[1m 12386300 (B[m[39;49mfree,(B[m[39;49m[1m        0 (B[m[39;49mused.(B[m[39;49m[1m 23195796 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m[1m 8349 ead0044   20   0  168568   2544   1680 R   0.7  0.0   0:00.05 top         (B[m[39;49m[K
+(B[m 1286 root      20   0   21676   1388   1000 S   0.3  0.0  12:46.43 irqbalance  (B[m[39;49m[K
+(B[m    1 root      20   0  194212   7244   4088 S   0.0  0.0  25:19.69 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.96 kthreadd    (B[m[39;49m[K
+(B[m    4 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ (B[m[39;49m[K
+(B[m    6 root      20   0       0      0      0 S   0.0  0.0   0:03.54 ksoftirqd/0 (B[m[39;49m[K
+(B[m    7 root      rt   0       0      0      0 S   0.0  0.0   0:00.85 migration/0 (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0  26:57.61 rcu_sched   (B[m[39;49m[K
+(B[m   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+ (B[m[39;49m[K
+(B[m   11 root      rt   0       0      0      0 S   0.0  0.0   2:09.00 watchdog/0  (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:30.23 watchdog/1  (B[m[39;49m[K
+(B[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:00.88 migration/1 (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S   0.0  0.0   0:01.49 ksoftirqd/1 (B[m[39;49m[K
+(B[m   16 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+ (B[m[39;49m[K
+(B[m   18 root      rt   0       0      0      0 S   0.0  0.0   0:28.92 watchdog/2  (B[m[39;49m[K
+(B[m   19 root      rt   0       0      0      0 S   0.0  0.0   0:00.22 migration/2 (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[Kbash-4.2$ who
+ead0044  pts/1        2021-01-13 10:21 (ettin.eng.auburn.edu)
+ead0044  pts/2        2021-01-13 10:30
+bash-4.2$ nproc
+16
+bash-4.2$ exit
+exit
+
+Script done on Wed 13 Jan 2021 10:34:47 AM CST
