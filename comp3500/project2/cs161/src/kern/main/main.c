@@ -89,6 +89,7 @@ boot(void)
 	assert(sizeof(userptr_t)==sizeof(char *));
 	assert(sizeof(*(userptr_t)0)==sizeof(char));
 	hello();
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 }
 
 /*
@@ -100,14 +101,14 @@ shutdown(void)
 {
 
 	kprintf("Shutting down.\n");
-	
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 	vfs_clearbootfs();
 	vfs_clearcurdir();
 	vfs_unmountall();
-
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 	splhigh();
-
-	scheduler_shutdown();
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
+	scheduler_shutdown();	
 	thread_shutdown();
 }
 
@@ -133,6 +134,7 @@ sys_reboot(int code)
 	}
 
 	shutdown();
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 
 	switch (code) {
 	    case RB_HALT:
@@ -161,8 +163,10 @@ int
 kmain(char *arguments)
 {
 	boot();
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 
 	menu(arguments);
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 
 	/* Should not get here */
 	return 0;

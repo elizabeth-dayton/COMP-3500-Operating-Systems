@@ -66,8 +66,10 @@ cmd_progthread(void *ptr, unsigned long nargs)
 
 	/* Hope we fit. */
 	assert(strlen(args[0]) < sizeof(progname));
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 
 	strcpy(progname, args[0]);
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 
 	result = runprogram(progname);
 	if (result) {
@@ -188,6 +190,7 @@ cmd_pwd(int nargs, char **args)
 
 	/* null terminate */
 	buf[sizeof(buf)-1-ku.uio_resid] = 0;
+	DEBUG(DB_VM, "VM free pages: %u\n", free_pages);
 
 	/* print it */
 	kprintf("%s\n", buf);
@@ -223,7 +226,6 @@ cmd_panic(int nargs, char **args)
 	panic("User requested panic\n");
 	return 0;
 }
-
 /*
  * Command for shutting down.
  */
