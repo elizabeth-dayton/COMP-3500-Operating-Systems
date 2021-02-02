@@ -1,0 +1,1 @@
+/home/u1/ead0044/Documents/COMP-3500-Operating-Systems/comp3500/project2/cs161/cs161-gdb-1.5/./gdb-6.6+cs161/sim/mips/tconfig.in

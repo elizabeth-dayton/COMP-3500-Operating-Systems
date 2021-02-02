@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /home/u1/ead0044/cs161/tools/bin/mips-linux-ld "$@"

@@ -1,0 +1,154 @@
+Script started on Tue 02 Feb 2021 11:07:12 AM CST
+[?1034hbash-4.2$ git status
+# On branch main
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    ../../cs161-binutils-1.5.tgz
+#	deleted:    ../../cs161-gcc-1.5.tgz
+#	deleted:    ../../cs161-gdb-1.5.tgz
+#	deleted:    ../../os161-1.10.tar.gz
+#	deleted:    ../../sys161-1.14.tar.gz
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ git add *
+bash-4.2$ git status
+# On branch main
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   setup.script
+#	new file:   typescript
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    ../../cs161-binutils-1.5.tgz
+#	deleted:    ../../cs161-gcc-1.5.tgz
+#	deleted:    ../../cs161-gdb-1.5.tgz
+#	deleted:    ../../os161-1.10.tar.gz
+#	deleted:    ../../sys161-1.14.tar.gz
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../cs161-binutils-1.5.tgz
+#	../cs161-binutils-1.5/
+#	../cs161-gcc-1.5.tgz
+#	../cs161-gcc-1.5/
+#	../cs161-gdb-1.5.tgz
+#	../cs161-gdb-1.5/
+#	../os161-1.10.tar.gz
+#	../os161/
+#	../sys161-1.14.tar.gz
+#	../sys161-1.14/
+bash-4.2$ git commit
+[?1049h[?1h=[1;30r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[30;1H".git/COMMIT_EDITMSG" 36L, 1033C[2;1H# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Elizabeth A Dayton <ead0044@tux052.eng.auburn.edu>
+#
+# On branch main
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#[7Cnew file:   setup.script
+#[7Cnew file:   typescript
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#[7Cdeleted:    ../../cs161-binutils-1.5.tgz
+#[7Cdeleted:    ../../cs161-gcc-1.5.tgz
+#[7Cdeleted:    ../../cs161-gdb-1.5.tgz
+#[7Cdeleted:    ../../os161-1.10.tar.gz
+#[7Cdeleted:    ../../sys161-1.14.tar.gz
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#[7C../cs161-binutils-1.5.tgz
+#[7C../cs161-binutils-1.5/
+#[7C../cs161-gcc-1.5.tgz[1;1H[?12l[?25h[?25l[30;1H[1m-- INSERT --[m[30;13H[K[1;1H[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[1;14H[K[1;14H[?12l[?25h[?25l[1;13H[K[1;13H[?12l[?25h[?25l[1;12H[K[1;12H[?12l[?25h[?25l[1;11H[K[1;11H[?12l[?25h[?25l[1;10H[K[1;10H[?12l[?25h[?25l[?12l[?25h[?25l[1;8H[K[1;8H[?12l[?25h[?25l[1;7H[K[1;7H[?12l[?25h[?25l[1;6H[K[1;6H[?12l[?25h[?25l[1;5H[K[1;5H[?12l[?25h[?25l[1;4H[K[1;4H[?12l[?25h[?25l[1;3H[K[1;3H[?12l[?25h[?25l[1;2H[K[1;2H[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l [?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25l[1;14H[K[1;14H[?12l[?25h[?25l[1;13H[K[1;13H[?12l[?25h[?25l[1;12H[K[1;12H[?12l[?25h[?25l[1;11H[K[1;11H[?12l[?25h[?25l[1;10H[K[1;10H[?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25lv[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25lb[?12l[?25h[?25lu[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25lt[?12l[?25h[?25l[2;29r[2;1H[L[1;30r[2;1H[?12l[?25h[?25l[1;29r[29;1H
+[1;30r[1;1Hadding unpacked files that have been built[29;1H#[7C../cs161-gcc-1.5.tgz[1;43H[?12l[?25h[30;1H[K[1;42H[?25l[?12l[?25h[?25l[30;1H:[?12l[?25hwq[?25l".git/COMMIT_EDITMSG" 36L, 1075C written
+[?1l>[?12l[?25h[?1049l[main fd94788] adding unpacked files that have been built
+ Committer: Elizabeth A Dayton <ead0044@tux052.eng.auburn.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 785 insertions(+)
+ create mode 100644 comp3500/project2/cs161/asst0/setup.script
+ create mode 100644 comp3500/project2/cs161/asst0/typescript
+bash-4.2$ git status
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    ../../cs161-binutils-1.5.tgz
+#	deleted:    ../../cs161-gcc-1.5.tgz
+#	deleted:    ../../cs161-gdb-1.5.tgz
+#	deleted:    ../../os161-1.10.tar.gz
+#	deleted:    ../../sys161-1.14.tar.gz
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../cs161-binutils-1.5.tgz
+#	../cs161-binutils-1.5/
+#	../cs161-gcc-1.5.tgz
+#	../cs161-gcc-1.5/
+#	../cs161-gdb-1.5.tgz
+#	../cs161-gdb-1.5/
+#	../os161-1.10.tar.gz
+#	../os161/
+#	../sys161-1.14.tar.gz
+#	../sys161-1.14/
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ i[Kgit push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': eliz9879@icloud.com
+Password for 'https://eliz9879@icloud.com@github.com': 
+Counting objects: 11, done.
+Delta compression using up to 16 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 4.17 KiB | 0 bytes/s, done.
+Total 8 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/elizabeth-dayton/COMP-3500-Operating-Systems
+   422f588..fd94788  main -> main
+bash-4.2$ git status
+# On branch main
+# Changes not staged for commit:
+#  
