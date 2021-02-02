@@ -345,7 +345,7 @@ AR_FLAGS_FOR_TARGET =
 AR_CREATE_FOR_TARGET = $(AR_FOR_TARGET) $(AR_FLAGS_FOR_TARGET) rc
 AR_EXTRACT_FOR_TARGET = $(AR_FOR_TARGET) $(AR_FLAGS_FOR_TARGET) x
 LIPO_FOR_TARGET = lipo
-ORIGINAL_AS_FOR_TARGET = /home/u1/ead0044/cs161/tools/bin/mips-linux-as
+ORIGINAL_AS_FOR_TARGET = ./as
 RANLIB_FOR_TARGET := $(shell \
   if [ -f $(objdir)/../binutils/ranlib ] ; then \
     echo $(objdir)/../binutils/ranlib ; \
@@ -356,8 +356,8 @@ RANLIB_FOR_TARGET := $(shell \
        t='$(program_transform_name)'; echo ranlib | sed -e $$t ; \
     fi; \
   fi)
-ORIGINAL_LD_FOR_TARGET = /home/u1/ead0044/cs161/tools/bin/mips-linux-ld
-ORIGINAL_NM_FOR_TARGET = /home/u1/ead0044/cs161/tools/bin/mips-linux-nm
+ORIGINAL_LD_FOR_TARGET = ./collect-ld
+ORIGINAL_NM_FOR_TARGET = ./nm
 NM_FOR_TARGET = ./nm
 STRIP_FOR_TARGET := $(shell \
   if [ -f $(objdir)/../binutils/strip ] ; then \

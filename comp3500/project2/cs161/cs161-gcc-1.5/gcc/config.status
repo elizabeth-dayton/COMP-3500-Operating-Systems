@@ -574,12 +574,12 @@ s,@BUILD_CFLAGS@,$(ALL_CFLAGS),;t t
 s,@STMP_FIXINC@,stmp-fixinc,;t t
 s,@STMP_FIXPROTO@,,;t t
 s,@collect2@,collect2$(exeext),;t t
-s,@gcc_cv_as@,/home/u1/ead0044/cs161/tools/bin/mips-linux-as,;t t
-s,@ORIGINAL_AS_FOR_TARGET@,/home/u1/ead0044/cs161/tools/bin/mips-linux-as,;t t
-s,@gcc_cv_ld@,/home/u1/ead0044/cs161/tools/bin/mips-linux-ld,;t t
-s,@ORIGINAL_LD_FOR_TARGET@,/home/u1/ead0044/cs161/tools/bin/mips-linux-ld,;t t
-s,@gcc_cv_nm@,/home/u1/ead0044/cs161/tools/bin/mips-linux-nm,;t t
-s,@ORIGINAL_NM_FOR_TARGET@,/home/u1/ead0044/cs161/tools/bin/mips-linux-nm,;t t
+s,@gcc_cv_as@,./as,;t t
+s,@ORIGINAL_AS_FOR_TARGET@,./as,;t t
+s,@gcc_cv_ld@,./collect-ld,;t t
+s,@ORIGINAL_LD_FOR_TARGET@,./collect-ld,;t t
+s,@gcc_cv_nm@,./nm,;t t
+s,@ORIGINAL_NM_FOR_TARGET@,./nm,;t t
 s,@gcc_cv_objdump@,/home/u1/ead0044/cs161/tools/bin/mips-linux-objdump,;t t
 s,@ORIGINAL_OBJDUMP_FOR_TARGET@,/home/u1/ead0044/cs161/tools/bin/mips-linux-objdump,;t t
 s,@libgcc_visibility@,yes,;t t
@@ -620,7 +620,7 @@ s,@extra_parts@,crtbegin.o crtbeginS.o crtbeginT.o crtend.o crtendS.o,;t t
 s,@extra_passes@,,;t t
 s,@extra_programs@,,;t t
 s,@float_h_file@,,;t t
-s,@gcc_config_arguments@,/home/u1/ead0044/Documents/COMP-3500-Operating-Systems/comp3500/project2/cs161/cs161-gcc-1.5/./gcc-4.1.2+cs161/configure --target=mips-linux --nfp --disable-shared --disable-threads --disable-libmudflap --disable-libssp --prefix=/home/u1/ead0044/cs161/tools,;t t
+s,@gcc_config_arguments@,/home/u1/ead0044/Documents/COMP-3500-Operating-Systems/comp3500/project2/cs161/cs161-gcc-1.5/./gcc-4.1.2+cs161/configure --target=mips-linux --nfp --disable-shared --disable-threads --disable-libmudflap --disable-libssp --prefix=/home/u1/ead0044/cs161/tools : (reconfigured) /home/u1/ead0044/Documents/COMP-3500-Operating-Systems/comp3500/project2/cs161/cs161-gcc-1.5/./gcc-4.1.2+cs161/configure --target=mips-linux --nfp --disable-shared --disable-threads --disable-libmudflap --disable-libssp --prefix=/home/u1/ead0044/cs161/tools,;t t
 s,@gcc_gxx_include_dir@,$(libsubdir)/$(unlibsubdir)/..`echo $(exec_prefix) | sed -e 's|^$(prefix)||' -e 's|/[^/]*|/..|g'`/include/c++/$(version),;t t
 s,@libstdcxx_incdir@,c++/$(version),;t t
 s,@host_exeext@,,;t t

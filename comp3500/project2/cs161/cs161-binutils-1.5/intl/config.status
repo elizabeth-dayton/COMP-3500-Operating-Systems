@@ -2,7 +2,7 @@
 # Generated automatically by configure.
 # Run this file to recreate the current configuration.
 # This directory was configured as follows,
-# on host tux052.eng.auburn.edu:
+# on host tux057.eng.auburn.edu:
 #
 # /home/u1/ead0044/Documents/COMP-3500-Operating-Systems/comp3500/project2/cs161/cs161-binutils-1.5/binutils-2.17/intl/configure  --cache-file=./config.cache --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=mips-linux --with-gnu-as --with-gnu-ld --with-stabs --nfp --prefix=/home/u1/ead0044/cs161/tools '--program-transform-name=s,^,mips-linux-,; ' --srcdir=/home/u1/ead0044/Documents/COMP-3500-Operating-Systems/comp3500/project2/cs161/cs161-binutils-1.5/./binutils-2.17/intl
 #
