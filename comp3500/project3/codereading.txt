@@ -1,0 +1,39 @@
+1) What happens to a thread when it exits (i.e., calls thread_exit() )? What about when it sleeps?
+
+	When thread_exit is called, the thread is being prepared for deletion. In other words, it will not be picked back up and ran again later. When a thread sleeps, it is with the intention that it will eventually be woken back up to continue running where it left off.
+
+2) What function(s) handle(s) a context switch?
+
+	mi_switch
+
+3) How many thread states are there? What are they?
+
+	The states are run, ready, sleep, and zombie.
+
+4) What does it mean to turn interrupts off? How is this accomplished? Why is it important to turn off interrupts in the thread subsystem code?
+
+	Turning interrupts off means the thread running can not be interrupted by anything, including the OS. This is accomplished by calling splhigh(). It is important to turn off interuppts if you might have more than one thread running at a time. You don't want two threads trying to access and modify the same variable at the same time.
+
+5) What happens when a thread wakes up another thread? How does a sleeping thread get to run again?
+
+	The sleeping thread is put into a ready state. It is made runnable again by the scheduler's make_runnable function. It then gets run again using  mi_threadstart.
+
+6) What function is responsible for choosing the next thread to run?
+
+	 The scheduler function is responsible.
+
+7) How does that function pick the next thread?
+
+	It checks the run queue for the next thread that is ready. If none is ready, it waits until one is.
+
+8) What role does the hardware timer play in scheduling? What hardware independent function is called on a timer interrupt?
+
+	hardclock() calls thread_wakeup() and thread_yield() and  clocksleep() calls thread_sleep()
+
+9) Describe how thread_sleep() and thread_wakeup() are used to implement semaphores. What is the purpose of the argument passed to thread_sleep()?
+
+	These two functions are used to control multiple threads that are trying to access a shared resource. You can wakeup one thread at a time to use the shared variable and have the others sleep. The argument to thread_sleep() is the thread that you want to make sleep.
+
+10) Why does the lock API in OS/161 provide lock_do_i_hold(), but not lock_get_holder?
+
+	Because locks have to be unlocked by the same thread that acquired it.
