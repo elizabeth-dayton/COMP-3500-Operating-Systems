@@ -1,0 +1,7 @@
+1. Explain how to avoid starvation in your implementation.
+
+	The program avoids starvation by prompting the other animal type to enter the kitchen before it lets other members of the last animal type in. For example, if two cats just finished in the kitchen, the program then sees if any mice are waiting to get in. If there are, you let them in. If not, then you can let other waiting cats or, if there aren't any other cats waiting, just open the kitchen.
+
+2. Comment on your experience of implementing the Cats_and_Mice program. Can you derive any principles about the use of the semaphore synchronization primitives?
+
+	I basically just followed exactly whay Dr. Qin provided us in handouts and in powerpoints. I understand sempahore's a lot more than I do locks and I understand them better now that I've seen an simplified example of how to use them.  
